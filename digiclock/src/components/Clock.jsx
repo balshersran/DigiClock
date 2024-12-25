@@ -16,9 +16,12 @@ export default function Clock() {
 
     return (
         <>
-        <h3>{hour}</h3>
-        <h3>{minutes}</h3>
-        <h3>{seconds}</h3>
+        <div className="flex flex-row justify-center">
+        <span className="p-4 text-4xl">{hour}</span>
+        <span className="p-4">:</span>
+        <span className="p-4 text-4xl">{minutes}</span>
+        <span className="p-4">{seconds}</span>
+        </div>
         </>
     );
 }
