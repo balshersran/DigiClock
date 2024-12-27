@@ -1,7 +1,7 @@
 import Clock from "./Components/clock";
 import "./index.css";
 
-function App(q) {
+function App() {
   return (
     <>
       <div className="container mw-auto p-48 height-auto">
