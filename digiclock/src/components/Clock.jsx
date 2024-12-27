@@ -10,8 +10,8 @@ export default function Clock() {
     return () => clearInterval(interval);
   }, []);
 
-  let hour = time.getHours();
-  let minutes = time.getMinutes();
+  let hour = time.getHours().toString().padStart(2,0);
+  let minutes = time.getMinutes().toString().padStart(2,0);
   let seconds = time.getSeconds();
   let month = time.getMonth();
   let day = time.getDate();
