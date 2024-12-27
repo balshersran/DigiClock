@@ -16,6 +16,11 @@ export default function Clock() {
   let month = time.getMonth();
   let day = time.getDate();
   let year = time.getFullYear();
+  // output current day of the week
+  // make an array of time and date and index the date and put it ot string
+  let today = time.getDay();
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+  let currentDay = days[today];
 
   return (
     <>
@@ -37,6 +42,9 @@ export default function Clock() {
         </span>
       </div>
       <div className="px-6 pt-4 pb-2 text-center">
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+            {currentDay}
+        </span>
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
           {month}
         </span>
